@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, CurrencyPipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { ApiConnectionService } from '../../services/api-connection.service';
 import { CardService, Product } from '../../services/card.service';
@@ -6,7 +6,7 @@ import { CardService, Product } from '../../services/card.service';
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CurrencyPipe, UpperCasePipe],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',
 })

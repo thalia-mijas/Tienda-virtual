@@ -1,5 +1,5 @@
 <div class="categories-container">
-  <button *ngFor="let category of categories" (click)="filterCategory(category)">{{ category }}</button>
+  <button *ngFor="let category of categories" (click)="filterCategory(category)"><span class="text">{{ category | uppercase }}</span></button>
 </div>
 <div class="products-container">
   <div *ngFor="let product of products">

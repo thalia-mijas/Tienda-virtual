@@ -1,3 +1,4 @@
+import { CurrencyPipe, TitleCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiConnectionService } from '../../services/api-connection.service';
@@ -9,7 +10,7 @@ import {
 @Component({
   selector: 'app-product-detail',
   standalone: true,
-  imports: [],
+  imports: [CurrencyPipe, TitleCasePipe],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css',
 })
